@@ -1,4 +1,4 @@
-var edge = require('edge');
+var edge = require('electron-edge');
 
 var helloFs = edge.func('fs', function () {/*
     fun input -> async { 
