@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GeneCms.Ui.Eto", "GeneCms.Ui.Eto\GeneCms.Ui.Eto.fsproj", "{8E15ACA1-5A2D-4455-B729-AE5053F21C68}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneCmsUiCefWinForms", "GeneCmsUiCefWinForms\GeneCmsUiCefWinForms.csproj", "{B3854BB0-7D5A-4999-AE19-038BC925567B}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GeneCms.AdminWeb", "GeneCms.AdminWeb\GeneCms.AdminWeb.fsproj", "{087D4A1B-CF52-4736-8D5A-61B254AF3AB9}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GeneCms.Configuration.FileProvider", "GeneCms.Configuration.FileProvider\GeneCms.Configuration.FileProvider.fsproj", "{61AFAEE9-7086-40CE-9B34-3B5329C6078C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,18 @@ Global
 		{087D4A1B-CF52-4736-8D5A-61B254AF3AB9}.Release|x64.Build.0 = Release|Any CPU
 		{087D4A1B-CF52-4736-8D5A-61B254AF3AB9}.Release|x86.ActiveCfg = Release|Any CPU
 		{087D4A1B-CF52-4736-8D5A-61B254AF3AB9}.Release|x86.Build.0 = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|x64.Build.0 = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Debug|x86.Build.0 = Debug|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|x64.ActiveCfg = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|x64.Build.0 = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|x86.ActiveCfg = Release|Any CPU
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,5 +126,6 @@ Global
 		{C045C31B-8282-46B1-8FAB-87D0251FC710} = {3806AF4C-983E-4188-BE55-631C44BF48AE}
 		{B3854BB0-7D5A-4999-AE19-038BC925567B} = {3806AF4C-983E-4188-BE55-631C44BF48AE}
 		{087D4A1B-CF52-4736-8D5A-61B254AF3AB9} = {4442EE8F-9314-4B35-9477-5EC37CD9C25F}
+		{61AFAEE9-7086-40CE-9B34-3B5329C6078C} = {4442EE8F-9314-4B35-9477-5EC37CD9C25F}
 	EndGlobalSection
 EndGlobal

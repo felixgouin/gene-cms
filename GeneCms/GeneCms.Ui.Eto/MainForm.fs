@@ -1,6 +1,7 @@
 ﻿namespace GeneCms.Ui.Eto
 
 open System
+open System.IO
 open Eto.Forms
 open Eto.Drawing
 open GeneCms.Generator
@@ -11,20 +12,14 @@ type MainForm() as this =
 
 
     do 
+        let testTemplates = [| {Name ="MainTemplate.htm"; Contents = File.ReadAllText("C:\Users\jtarquino\Source\Public\GeneCMS\GeneCms\GeneCMSShell\GeneSite\Template") } |]
         let genTestPage evt = 
-            let testContent =  { Name = "Lol";
-                                  Url = "ju";
-                                  Keywords = "";
-                                  TemplatePath = "testGen.html" ;
-                                  ContentElements = [|
-                                                        { HtmlId = "mainContent"
-                                                          InnerHtml = "<h1>Hi</hi>"
-                                                          Attributes = [] 
-                                                          }
-                                                      |];
-                                  }
-            HtmlGenerator.GeneratePage testContent
-
+            let pages =  GeneCms.Configuration.FileProvider.FileProvider.GetSiteConfiguration @"C:\Users\jtarquino\Source\Public\GeneCMS\GeneCms\GeneCMSShell\GeneSite\Configuration"
+            pages |> Seq.iter (fun p -> 
+                                            let contents = HtmlGenerator.GeneratePage p testTemplates
+                                            File.WriteAllText(p.Url, contents)
+                                        )
+            
         base.Title <- "My Eto Form"
         base.ClientSize <- new Size(400, 350)
 

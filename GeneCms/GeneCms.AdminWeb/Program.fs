@@ -3,8 +3,9 @@
 
 open Suave
 open Suave.Operators
+open System.IO
 
-let app =
+let app baseFolder =
     choose
         [ Filters.GET >=> choose
 
@@ -13,11 +14,12 @@ let app =
 //                  "My main page"
 //                  |> Successful.OK)
 
-              Files.browse @"C:\Users\jptar_000\Source\Repos\gene-cms\GeneCms\GeneCms.AdminWeb\bin\Debug\Generated"
+              Files.browse baseFolder // @"C:\Users\jptar_000\Source\Repos\gene-cms\GeneCms\GeneCms.AdminWeb\bin\Debug\Generated"
               ] 
         ] // <-- The important part
 
 [<EntryPoint>]
 let main x =
-    Web.startWebServer Web.defaultConfig app |> ignore
+    let baseFolder = Path.GetFullPath(x.[0])
+    Web.startWebServer Web.defaultConfig (app baseFolder) |> ignore
     0

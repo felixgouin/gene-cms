@@ -8,11 +8,12 @@
     <OutputType>Library</OutputType>
     <RootNamespace>GeneCms.Ui.Eto</RootNamespace>
     <AssemblyName>GeneCms.Ui.Eto</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>GeneCms.Ui.Eto</Name>
     <DoNotCopyLocalIfInGac>true</DoNotCopyLocalIfInGac>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -111,6 +112,11 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <ProjectReference Include="..\GeneCms.Configuration.FileProvider\GeneCms.Configuration.FileProvider.fsproj">
+      <Name>GeneCms.Configuration.FileProvider</Name>
+      <Project>{61afaee9-7086-40ce-9b34-3b5329c6078c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\GeneCms.Core\GeneCms.Core.fsproj">
       <Name>GeneCms.Core</Name>
       <Project>{35341122-1c56-4950-afd3-27127ff02a8e}</Project>

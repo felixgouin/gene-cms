@@ -1,3 +1,4 @@
 {
-    "template":"MainTemplate.htm"
+    "template":"MainTemplate.htm",
+    "keywords": "sample"
 }
